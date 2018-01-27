@@ -16,6 +16,6 @@ facebook_username: sahil.jaganmohan
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-113193018-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
