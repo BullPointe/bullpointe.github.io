@@ -14,8 +14,8 @@ gplus_username:  lorem_ipsum
 instagram_username: sahilj611
 facebook_username: sahil.jaganmohan
 
-# Google-analytics
+# Google-analytics UA-113193018-1
 google-analytics:
-  id: "UA-113193018-1"
+  id: ""
 
 exclude: ['package.json', 'src' , 'node_modules']
