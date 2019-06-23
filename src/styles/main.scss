@@ -1,7 +1,7 @@
 $main: #1a222c;
 $sec: #4B5664;
 $purple: #54516A;
-$cut: 768px;
+$cut: 810px;
 $baseurl: "{{site.baseurl}}";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -61,6 +61,9 @@ body {
   background-image: url('#{$baseurl}/assets/img/sittingonrock.JPG');
   background-blend-mode: exclusion;
   background-position-y: 17%;
+  @media only screen and (max-width:$cut){
+    background-position-x: 70%;
+  }
   width: 100vw;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -79,6 +82,9 @@ body {
   width: 100vw;
   min-height: 110vh;
   color: #fff;
+  @media only screen and (max-width:$cut){
+    background-position-x: 10%;
+  }
 }
 
 #allProjects {
