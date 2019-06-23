@@ -81,15 +81,16 @@ body {
   background-image: url('#{$baseurl}/assets/img/overlookmoutains.JPG');
   background-size: cover;
   background-position-y: 40%;
+  @media only screen and (max-width:$cut){
+    background-attachment:scroll;
+    background-position-x: 10%;
+  }
   background-blend-mode: exclusion;
   background-attachment: fixed;
   width: 100vw;
   min-height: 110vh;
   color: #fff;
-  @media only screen and (max-width:$cut){
-    background-attachment:scroll;
-    background-position-x: 10%;
-  }
+  
 }
 
 #allProjects {
