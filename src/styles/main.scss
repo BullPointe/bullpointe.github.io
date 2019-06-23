@@ -2,6 +2,7 @@ $main: #1a222c;
 $sec: #4B5664;
 $purple: #54516A;
 $cut: 768px;
+$baseurl: "{{site.baseurl}}";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
@@ -54,19 +55,45 @@ body {
     }
 }
 
-#particles-js {
+#headerContent {
   background: $main;
   display: block;
-  vertical-align: bottom;
+  background-image: url('#{$baseurl}/assets/img/sittingonrock.JPG');
+  background-blend-mode: exclusion;
+  background-position-y: 17%;
   width: 100vw;
   min-height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover, contain;
   background-attachment: fixed;
-  .particles-js-canvas-el {
-    width:100vw !important;
-    height:100vh !important;
-  }
+  padding: 0%;
+  padding-bottom: 0px;
+}
+
+#aboutSection {
+  background-color: $main;
+  background-image: url('#{$baseurl}/assets/img/overlookmoutains.JPG');
+  background-size: cover;
+  background-position-y: 40%;
+  background-blend-mode: exclusion;
+  width: 100vw;
+  min-height: 100vh;
+  color: #fff;
+}
+
+#allProjects {
+  background-color: $main;
+  background-image: url('#{$baseurl}/assets/img/mountainswater.JPG');
+  display: block;
+  background-size: cover;
+  background-position-y: 20%;
+  background-position-x: 60%;
+  // background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 50vh;
+  background-blend-mode: exclusion, lighten;
+  color: #fff;
+
 }
 
 .content {
@@ -183,12 +210,16 @@ body {
   @media only screen and (min-width: $cut) {
     font-size: 75px;
   }
+
 }
 
 .user-details {
   text-align: center;
   font-size: 16px;
-  margin: 10px auto;
+  // margin: 10px auto;
+  padding-bottom: 5px;
+  padding-top: 40px;
+
 }
 
 .user-projects {
@@ -202,7 +233,7 @@ body {
     margin: 0;
   }
   li {
-    color: $main;
+    color: #fff;
     font-size: 1.1rem;
   }
   p {
@@ -217,13 +248,14 @@ body {
 }
 
 .project-link {
+  color: #fff;
   display: block;
   width: 100px;
   margin: 10px 0px;
   padding: 5px;
-  color: $main;
+  // color: $main;
   background-color: transparent;
-  border: 1px solid $main;
+  border: 1px solid #fff;
   border-radius: 10px;
   text-align: center;
   outline: none;
@@ -253,7 +285,7 @@ body {
 .footer {
   background: $main;
   padding: 10px 0;
-  margin-top: 100px;
+  // margin-top: 100px;
   text-align: center;
   color: #FFF;
   .love {
