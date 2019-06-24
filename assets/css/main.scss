@@ -113,7 +113,50 @@ body {
 }
 
 #experience {
+  background-color: $main;
+  background-image: url('#{$baseurl}/assets/img/waterfall.JPG');
+  background-size: cover;
+  background-position-y: 35%;
+  @media only screen and (max-width:$cut){
+    background-attachment:scroll;
+    background-position-x: 10%;
+  }
+  background-blend-mode: exclusion;
+  background-attachment: fixed;
+  width: 100vw;
+  min-height: 110vh;
+  color: #fff;
+  .user-details {
+    padding-top: 22px;
+  }
+}
+
+.EandE {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: transparent;
+
+  }
   
+  li a{
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 100px 50px;
+    text-decoration: none;
+    border: 3px solid #fff;
+    // float: left;
+  
+  }
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #1c242e;
+  }
+
+
 }
 
 
