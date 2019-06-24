@@ -1,70 +1,71 @@
 ---
 ---
+
 $main: #1a222c;
-$sec: #4B5664;
-$purple: #54516A;
+$sec: #4b5664;
+$purple: #54516a;
 $cut: 1000px;
 $baseurl: "{{site.baseurl}}";
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @-webkit-keyframes pulse {
-    from {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-        filter: alpha(opacity=40);
-        opacity: .4;
-        top: 0;
-    }
-    50% {
-        -ms-filter: none;
-        -webkit-filter: none;
-        filter: none;
-        opacity: 1;
-        top: -10px;
-    }
-    to {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-        filter: alpha(opacity=40);
-        opacity: .4;
-        top: 0;
-    }
+  from {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+  50% {
+    -ms-filter: none;
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+    top: -10px;
+  }
+  to {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
 }
 
 @keyframes pulse {
-    from {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-        filter: alpha(opacity=40);
-        opacity: .4;
-        top: 0
-    }
-    50% {
-        -ms-filter: none;
-        -webkit-filter: none;
-        filter: none;
-        opacity: 1;
-        top: -10px
-    }
-    to {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-        filter: alpha(opacity=40);
-        opacity: .4;
-        top: 0
-    }
+  from {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+  50% {
+    -ms-filter: none;
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+    top: -10px;
+  }
+  to {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
 }
 
 #headerContent {
   background: $main;
   display: block;
-  background-image: url('#{$baseurl}/assets/img/sittingonrock.JPG');
+  background-image: url("#{$baseurl}/assets/img/sittingonrock.JPG");
   background-blend-mode: exclusion;
   background-position-y: 17%;
-  @media only screen and (max-width:$cut){
-    background-attachment:scroll;
+  @media only screen and (max-width: $cut) {
+    background-attachment: scroll;
     background-position-x: 70%;
   }
   width: 100vw;
@@ -78,11 +79,11 @@ body {
 
 #aboutSection {
   background-color: $main;
-  background-image: url('#{$baseurl}/assets/img/overlookmoutains.JPG');
+  background-image: url("#{$baseurl}/assets/img/overlookmoutains.JPG");
   background-size: cover;
   background-position-y: 40%;
-  @media only screen and (max-width:$cut){
-    background-attachment:scroll;
+  @media only screen and (max-width: $cut) {
+    background-attachment: scroll;
     background-position-x: 10%;
   }
   background-blend-mode: exclusion;
@@ -90,38 +91,36 @@ body {
   width: 100vw;
   min-height: 110vh;
   color: #fff;
-  
 }
 
 #allProjects {
   background-color: $main;
-  background-image: url('#{$baseurl}/assets/img/mountainswater.JPG');
+  background-image: url("#{$baseurl}/assets/img/mountainswater.JPG");
   display: block;
   background-size: cover;
   background-position-y: 70%;
   background-position-x: 60%;
   // background-repeat: no-repeat;
   background-attachment: fixed;
-  @media only screen and (max-width:$cut){
-    background-attachment:scroll;
+  @media only screen and (max-width: $cut) {
+    background-attachment: scroll;
   }
   width: 100vw;
   min-height: 50vh;
   background-blend-mode: exclusion, lighten;
   color: #fff;
-
 }
 
 #experience {
-  background-color: $main;
-  background-image: url('#{$baseurl}/assets/img/waterfall.JPG');
+  background-color:$main;
+  background-image: url("#{$baseurl}/assets/img/waterfall.JPG");
   background-size: cover;
-  background-position-y: 35%;
-  @media only screen and (max-width:$cut){
-    background-attachment:scroll;
+  background-position-y: 15%;
+  @media only screen and (max-width: $cut) {
+    background-attachment: scroll;
     background-position-x: 10%;
   }
-  background-blend-mode: exclusion;
+  background-blend-mode: soft-light;
   background-attachment: fixed;
   width: 100vw;
   min-height: 110vh;
@@ -129,42 +128,47 @@ body {
   .user-details {
     padding-top: 22px;
   }
+
 }
 
-.EandE {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: transparent;
-
-  }
-  
-  li a{
-    display: block;
+.EandEButtons {
+  text-align: center;
+  button {
+    display: inline-block;
+    background-color: transparent; 
+    border: 2px solid #fff; 
+    color: white; /* White text */
     text-align: center;
-    color: #fff;
-    padding: 100px 50px;
-    text-decoration: none;
-    border: 3px solid #fff;
-    // float: left;
-  
+    padding: 0px;
+    height: 70px; /* Some padding */
+    width: 400px;
+    cursor: pointer; /* Pointer/hand icon */
+    transition-duration: 0.7s;
   }
-  /* Change the link color on hover */
-  li a:hover {
-    background-color: #1c242e;
+  
+  button:hover {
+    color: #1e252c;
+    background-color: #fff;
   }
 
+  button:active {
+    color: #1e252c;
+    background-color: #fff;
+  }
 
 }
 
-
+.allDetails {
+  // display: flex;
+  img {
+    padding-left: 10px;
+  }
+}
 
 .content {
   z-index: 1;
   text-align: center;
-  color:#FFF;
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -175,7 +179,7 @@ body {
     font-size: 50px;
     display: block;
     line-height: 1;
-    @media only screen and (min-width:$cut){
+    @media only screen and (min-width: $cut) {
       margin: 0;
       font-size: 100px;
     }
@@ -185,18 +189,18 @@ body {
     display: block;
     line-height: 1;
     margin: 5px 0 10px 0;
-    @media only screen and (min-width:$cut){
+    @media only screen and (min-width: $cut) {
       font-size: 40px;
     }
   }
   .link {
-    color: #FFF;
+    color: #fff;
     display: inline-flex;
     justify-content: space-between;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
-    @media only screen and (min-width:$cut){
+    @media only screen and (min-width: $cut) {
       font-size: 20px;
     }
   }
@@ -208,24 +212,24 @@ body {
   text-align: center;
   .icon {
     text-align: center;
-    color: #FFF;
+    color: #fff;
     width: 20px;
     height: 20px;
     font-size: 20px;
     padding: 10px;
     margin: 2px;
     border-radius: 50%;
-    border: 2px solid #FFF;
-    transition: all .7s;
+    border: 2px solid #fff;
+    transition: all 0.7s;
     &:hover {
       color: $main;
-      background: #FFF;
+      background: #fff;
     }
     &:active {
       color: $main;
-      background: #FFF;
+      background: #fff;
     }
-    @media only screen and (min-width:$cut) {
+    @media only screen and (min-width: $cut) {
       width: 35px;
       height: 35px;
       font-size: 35px;
@@ -234,7 +238,7 @@ body {
 }
 
 .down {
-  color: #FFF;
+  color: #fff;
   position: absolute;
   bottom: 25px;
   width: 100%;
@@ -244,24 +248,24 @@ body {
   font-size: 30px;
   cursor: pointer;
   .icon {
-      position: absolute;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-      fill: #fff;
-      -webkit-animation: pulse 1.3s infinite;
-      animation: pulse 1.3s infinite;
-      &:hover {
-        color: $sec;
-      }
-      &:active {
-        color: $sec;
-      }
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    -webkit-animation: pulse 1.3s infinite;
+    animation: pulse 1.3s infinite;
+    &:hover {
+      color: $sec;
+    }
+    &:active {
+      color: $sec;
+    }
   }
 }
 .user {
@@ -274,7 +278,6 @@ body {
   @media only screen and (min-width: $cut) {
     font-size: 75px;
   }
-
 }
 
 .user-details {
@@ -283,7 +286,6 @@ body {
   // margin: 10px auto;
   padding-bottom: 5px;
   padding-top: 60px;
-
 }
 
 .user-projects {
@@ -325,24 +327,21 @@ body {
   outline: none;
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s ease-out,
-              background-color 0.3s ease-out,
-              border-color 0.3s ease-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out,
+    border-color 0.3s ease-out;
   &:hover {
     background-color: $purple;
     border-color: $purple;
     color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in,
+      border-color 0.3s ease-in;
   }
   &:active {
     background-color: $purple;
     border-color: $purple;
     color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in,
+      border-color 0.3s ease-in;
   }
 }
 
@@ -351,15 +350,15 @@ body {
   padding: 10px 0;
   // margin-top: 100px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   .love {
     color: red;
   }
   a {
     text-decoration: none;
     margin: 0;
-    color: #FFF;
-    &:hover{
+    color: #fff;
+    &:hover {
       color: $sec;
     }
     &:active {
