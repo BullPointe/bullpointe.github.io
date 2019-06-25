@@ -141,9 +141,16 @@ body {
 .allDetails {
   // display: flex;
   .user-projects {
+    padding-bottom: 0px;
     img {
       padding-left: 10px;
       border-radius: 15px;
+    }
+    #relevantCoursework {
+      margin-bottom: 0px;
+    }
+    #rutgersPrepLogo {
+        max-width: 50%;
     }
   }
 }
