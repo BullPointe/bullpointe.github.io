@@ -131,6 +131,23 @@ body {
 
 }
 
+.dateAndLocation {
+  p {
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.allDetails {
+  // display: flex;
+  .user-projects {
+    img {
+      padding-left: 10px;
+      border-radius: 15px;
+    }
+  }
+}
+
 .EandEButtons {
   text-align: center;
   button {
@@ -146,24 +163,21 @@ body {
     transition-duration: 0.7s;
   }
   
-  button:hover {
+  button:hover,button:active{
     color: #1e252c;
     background-color: #fff;
   }
 
-  button:active {
+  button.activeButton {
     color: #1e252c;
     background-color: #fff;
   }
+  
 
 }
 
-.allDetails {
-  // display: flex;
-  img {
-    padding-left: 10px;
-  }
-}
+
+
 
 .content {
   z-index: 1;
