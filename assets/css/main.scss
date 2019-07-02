@@ -112,13 +112,14 @@ body {
 }
 
 #experience {
-  background-color:$main;
+  background-color: $main;
   background-image: url("#{$baseurl}/assets/img/waterfall.JPG");
   background-size: cover;
-  background-position-y: 15%;
+  background-position-y: 45%;
   @media only screen and (max-width: $cut) {
     background-attachment: scroll;
-    background-position-x: 10%;
+    background-position-x: 30%;
+    background-position-y: 20%;
   }
   background-blend-mode: soft-light;
   background-attachment: fixed;
@@ -128,7 +129,6 @@ body {
   .user-details {
     padding-top: 22px;
   }
-
 }
 
 .dateAndLocation {
@@ -138,6 +138,7 @@ body {
   }
 }
 
+//Experience and Education Details
 .allDetails {
   // display: flex;
   .user-projects {
@@ -146,11 +147,16 @@ body {
       padding-left: 10px;
       border-radius: 15px;
     }
+    @media only screen and (max-width: $cut) {
+      img {
+        padding-left: 0px;
+      }
+    }
     #relevantCoursework {
       margin-bottom: 0px;
     }
     #rutgersPrepLogo {
-        max-width: 50%;
+      max-width: 50%;
     }
   }
 }
@@ -159,8 +165,8 @@ body {
   text-align: center;
   button {
     display: inline-block;
-    background-color: transparent; 
-    border: 2px solid #fff; 
+    background-color: transparent;
+    border: 2px solid #fff;
     color: white; /* White text */
     text-align: center;
     padding: 0px;
@@ -169,8 +175,15 @@ body {
     cursor: pointer; /* Pointer/hand icon */
     transition-duration: 0.7s;
   }
-  
-  button:hover,button:active{
+  //Realignment of buttons
+  @media only screen and (max-width: $cut) {
+    button {
+      width: 300px;
+    }
+  }
+
+  button:hover,
+  button:active {
     color: #1e252c;
     background-color: #fff;
   }
@@ -179,12 +192,7 @@ body {
     color: #1e252c;
     background-color: #fff;
   }
-  
-
 }
-
-
-
 
 .content {
   z-index: 1;
