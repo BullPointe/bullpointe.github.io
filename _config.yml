@@ -1,8 +1,8 @@
 # Site settings
 title: Sahil Jaganmohan
 description: My Projects
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://bullpointe.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+baseurl: "" 
+url: "http://bullpointe.github.io" 
 
 # User settings
 username: Sahil Jaganmohan
